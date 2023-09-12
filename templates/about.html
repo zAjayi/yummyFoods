@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{%load static%}
+
+{% block title %} About Us {% endblock title %}
+
+{% block content %}
+
+
+<!-- ======= About Section ======= -->
+<section id="about" class="about" style="padding-top: 100px;">
+  <div class="container" data-aos="fade-up">
+    <div class="section-header">
+      <h2>About Us</h2>
+      <p>Learn More <span>About Us</span></p>
+    </div>
+
+    <div class="row gy-4">
+      <div
+        class="col-lg-7 position-relative about-img"
+        style="background-image: url({% static 'assets/img/about.jpg' %})"
+        data-aos="fade-up"
+        data-aos-delay="150"
+      >
+        <div class="call-us position-absolute">
+          <h4>Book a Table</h4>
+          <p>+1 5589 55488 55</p>
+        </div>
+      </div>
+      <div
+        class="col-lg-5 d-flex align-items-end"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <div class="content ps-0 ps-lg-5">
+          <p class="fst-italic">
+            We are a restaurant located in the Wuse district of Abuja, we offer:
+          </p>
+          <ul>
+            <li>
+              <i class="bi bi-check2-all"></i> Online services that allow our
+              customers to book tables at our restaurant from the comfort of
+              their homes.
+            </li>
+            <li>
+              <i class="bi bi-check2-all"></i> Rich, healthy and delicious meals
+              that are not only enjoyable but also affordable so you never have
+              to break the bank to enjoy a good meal.
+            </li>
+            <li>
+              <i class="bi bi-check2-all"></i> A beautiful, quiet and serene
+              environment that allows our customers to enjoy their meals with an
+              outstanding lakeside view.
+            </li>
+          </ul>
+          <p>
+            Yummy is trusted and NAFDAC approved, all meals served are FDA
+            approved. We offer menus for any and all meals and we will be happy
+            to host you for your next meal.
+          </p>
+
+          <div class="position-relative mt-4">
+            <img
+              src="{% static 'assets/img/about-2.jpg' %}"
+              class="img-fluid"
+              alt=""
+            />
+            <a
+              href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+              class="glightbox play-btn"
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End About Section -->
+{% endblock content %}
